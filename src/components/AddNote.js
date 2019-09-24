@@ -44,7 +44,7 @@ export default class AddNote extends Component {
               
             />
           </label>
-          <label for="folder-select">
+          <label htmlFor="folder-select">
             <select
               id="folder-select"
               name="folderId"
@@ -53,12 +53,12 @@ export default class AddNote extends Component {
               
             >
               <option>--Please Choose a Folder--</option>
-              {this.props.folders.map(folder => (
-                <option value={folder.id}>{folder.name}</option>
+              {this.props.folders.map((folder,i) => (
+                <option value={folder.id} key={i}>{folder.name}</option>
               ))}
             </select>
           </label>
-          <label for="content">Add Note Content:</label>
+          <label htmlFor="content">Add Note Content:</label>
           <textarea
             id="content"
             name="content"

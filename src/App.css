@@ -33,7 +33,7 @@ ul {
   padding: 0px;
   display: flex;
   /* height: 100vh; */
-  /* padding: 0 3rem; */
+  padding-top: 1.2rem;
   /* justify-content: space-between; */
 }
 
